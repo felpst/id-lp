@@ -14,6 +14,7 @@ export default function Home() {
         <a
           className="flex gap-2 items-center bg-white w-fit py-[4px] pr-[18px] pl-[6px] md:py-[7px] rounded-full"
           href="https://getwaitlist.com/waitlist/17866"
+          id="waitlist-link"
         >
           <div className="p-2 bg-teal-100 rounded-full">
             <svg
@@ -73,6 +74,7 @@ export default function Home() {
               <a
                 className="flex w-fit gap-2 mt-[36px] mb-4 bg-white pr-[18px] pl-[6px] py-[7px] rounded-full"
                 href="https://getwaitlist.com/waitlist/17866"
+                id="waitlist-link"
               >
                 <div className="p-2 bg-teal-100 rounded-full">
                   <svg
@@ -364,6 +366,7 @@ export default function Home() {
             <a
               className="flex w-fit gap-2 mt-[36px] mb-4 bg-white pr-[18px] pl-[6px] py-[7px] rounded-full"
               href="https://getwaitlist.com/waitlist/17866"
+              id="waitlist-link"
             >
               <div className="p-2 bg-teal-100 rounded-full">
                 <svg
@@ -402,15 +405,25 @@ export default function Home() {
           <div className="w-full flex flex-col md:flex-row justify-start items-center md:gap-6 gap-2 px-[3rem] md:px-[5rem]">
             <p className="font-bold text-xl text-[#010101]">Social</p>
             <div className="flex flex-row gap-2">
-              <button className="px-3 py-2 bg-white/[0.4] rounded-full border border-white text-[#010101] font-medium">
+              <a
+                className="px-3 py-2 bg-white/[0.4] rounded-full border border-white text-[#010101] font-medium"
+                href="https://www.instagram.com/infodrops.co"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 Instagram
-              </button>
+              </a>
               <button className="px-3 py-2 bg-white/[0.4] rounded-full border border-white text-[#010101] font-medium">
                 X
               </button>
-              <button className="px-3 py-2 bg-white/[0.4] rounded-full border border-white text-[#010101] font-medium">
+              <a
+                className="px-3 py-2 bg-white/[0.4] rounded-full border border-white text-[#010101] font-medium"
+                href="https://www.reddit.com/user/infodrops/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 Reddit
-              </button>
+              </a>
               <button className="px-3 py-2 bg-white/[0.4] rounded-full border border-white text-[#010101] font-medium">
                 Discord
               </button>
