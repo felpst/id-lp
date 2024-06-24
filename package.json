@@ -13,12 +13,14 @@
     "next": "14.2.4",
     "react": "^18",
     "react-dom": "^18",
+    "react-gtm-module": "^2.0.11",
     "react-helmet": "^6.1.0"
   },
   "devDependencies": {
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
+    "@types/react-gtm-module": "^2.0.3",
     "@types/react-helmet": "^6.1.11",
     "autoprefixer": "^10.4.19",
     "eslint": "^8",

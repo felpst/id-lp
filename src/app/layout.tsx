@@ -1,14 +1,21 @@
-import type { Metadata } from "next"
-import { Outfit } from "next/font/google"
-import Script from "next/script"
-import "./globals.css"
+import type { Metadata } from 'next'
+import { Outfit } from 'next/font/google'
+import Script from 'next/script'
+import TagManager from 'react-gtm-module'
+import './globals.css'
 
-const outfit = Outfit({ subsets: ["latin"] })
+const outfit = Outfit({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: "Infodrops",
-  description: "Stay Informed, Stay Ahead",
+  title: 'Infodrops',
+  description: 'Stay Informed, Stay Ahead',
 }
+
+const tagManagerArgs = {
+  gtmId: 'GTM-WXG6HBGT',
+}
+
+TagManager.initialize(tagManagerArgs)
 
 export default function RootLayout({
   children,
