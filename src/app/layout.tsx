@@ -1,7 +1,6 @@
 import type { Metadata } from 'next'
 import { Outfit } from 'next/font/google'
 import Script from 'next/script'
-import TagManager from 'react-gtm-module'
 import './globals.css'
 
 const outfit = Outfit({ subsets: ['latin'] })
@@ -10,12 +9,6 @@ export const metadata: Metadata = {
   title: 'Infodrops',
   description: 'Stay Informed, Stay Ahead',
 }
-
-const tagManagerArgs = {
-  gtmId: 'GTM-WXG6HBGT',
-}
-
-TagManager.initialize(tagManagerArgs)
 
 export default function RootLayout({
   children,
@@ -36,6 +29,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 })(window,document,'script','dataLayer','GTM-WXG6HBGT');`,
           }}
         ></Script>
+        <noscript>
+          <iframe
+            src="https://www.googletagmanager.com/ns.html?id=GTM-WXG6HBGT"
+            height="0"
+            width="0"
+            style={{ display: 'none', visibility: 'hidden' }}
+          />
+        </noscript>
       </head>
       <body className={outfit.className}>{children}</body>
     </html>
