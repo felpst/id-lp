@@ -1,7 +1,18 @@
+'use client'
+
 import Image from 'next/image'
 import { useEffect } from 'react'
+import TagManager from 'react-gtm-module'
 
 export default function Home() {
+  useEffect(() => {
+    const tagManagerArgs = {
+      gtmId: 'GTM-WXG6HBGT',
+    }
+
+    TagManager.initialize(tagManagerArgs)
+  }, [])
+
   return (
     <main className="flex min-h-screen flex-col items-center bg-white">
       <div className="fixed px-8 md:px-16 md:py-8 py-6 z-10 w-[94%] md:w-[98%] mt-4 items-center justify-between flex bg-[#C2FCF8] rounded-[40px]">
